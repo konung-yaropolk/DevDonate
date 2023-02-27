@@ -41,7 +41,7 @@
             navigator.clipboard
             .writeText(text)
             .then(() => {
-                alert("successfully copied");
+                alert("Successfully Copied: ", text);
             })
             .catch((err) => {
                 alert("something went wrong:", err);
