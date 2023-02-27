@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+        body {
+            margin: 0 auto;
+            max-width: 500px;
+            width: 95%;
+            font-family: monospace;
+            font-size: 1.2em;
+            }
+
+        a:link {
+        color: darkcyan;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: darkcyan;
+        text-decoration: none;
+        }
+
+        a:active {
+        color: darkcyan;
+        text-decoration: none;
+        }
+        }
+
+    </style>
+	<script>
+
+        function copy(CallingElem) {
+            //var text = document.getElementById(CallingElem.id);
+              let text = document.getElementById(CallingElem.id).innerHTML;
+            //text.select;
+            //text.setSelectionRange(0, 99999);
+            navigator.clipboard
+            .writeText(text)
+            .then(() => {
+                alert("successfully copied");
+            })
+            .catch((err) => {
+                alert("something went wrong:", err);
+            });
+        }
+
+    </script>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>Hello my friends!</h1>
+			<p>
+
+                If You want to help the Ukraine army, You have a good chance :) <br>
+                <br>
+                This is my dear friend, whom I know for half of my life. I can`t tell her name, but If You know me personally, You good know who`s She :).
+                She showed valor and went to the army on the first day of the war on February 24. She great woman and now she needs help. For her combat missions need the SUV pickup. <br>
+
+                Guys, help pls. We need 6 000 EUR for Mitsubishi L200 or Nissan Navara. I found cars in Ukraine, and the problem stay only in money :) <br><br>
+                For today we already have 2500 EUR, and we need to add pressure on the rest of the amount :)<br><br>
+
+            </p>
+		</section>
+		<aside>
+			<h2>Click on the value to copy it</h2>
+			<ul>
+				<li>PayPal: <a href="#" id="value1" onClick="copy(this)">bikeday.kiev@gmail.com</a></li><br><br>
+
+
+                <b>SWIFT in USD:</b><br><br>
+                <li>IBAN: <a href="#" id="value2" onClick="copy(this)">UA623220010000026203307622239</a></li>
+                <li>Account No: <a href="#" id="value3" onClick="copy(this)">26203307622239</a></li>
+                <li>Receiver: <a href="#" id="value4" onClick="copy(this)">DANYLENKO ANNA</a></li>
+                <br><br>
+
+                <b>Account SEPA in Euro:</b><br><br>
+                <li>Account number (IBAN): <a href="#" id="value5" onClick="copy(this)">GB65CLJU00997182222937</a></li>
+                <li>BIC: <a href="#" id="value6" onClick="copy(this)">CLJUGB21</a></li>
+                <li>Account Holder Name: <a href="#" id="value7" onClick="copy(this)">DANYLENKO ANNA</a></li>
+                <li>TIN (Taxpayer Identification Number): <a href="#" id="value8" onClick="copy(this)">3172516363</a></li>
+                <li>Bank: <a href="#" id="value9" onClick="copy(this)">Clear Junction Limited</a></li>
+                <li>Bank address: <a href="#" id="value10" onClick="copy(this)">15 Kingsway, London WC2B 6UN</a></li>
+                <br><br>
+                <b>Link to donate via MonoBank:</b><br><br>
+                <li><a href="https://send.monobank.ua/jar/3EyEJr7c2M">https://send.monobank.ua/jar/3EyEJr7c2M</a></li>
+                <br><br>
+                <b>Ukrainian bank card for p2p transfer:</b><br><br>
+                <li>MasterCard: <a href="#" id="value11" onClick="copy(this)">5375411203763540</a></li>
+                <br><br><br><br>
+
+			</ul>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2023 <a href="http://github.com/konung-yaropolk">konung-yaropolk</a></p>
+	</footer>
+</body>
+</html>
